@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #272626;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.intro {
+    max-width: 400px;
+    margin-right: 20px;
+    margin-top: 250px;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.intro h1 span {
+    color: #add8e6;
+}
+
+.intro h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.intro p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.box {
+    background: #444;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.box h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.box p {
+    margin: 5px 0;
+    font-size: 1rem;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.box p img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.box .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.box .skills img {
+    width: 24px;
+    height: 24px;
+}
+
+.box a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.services ul li::before {
+    content: '•';
+    color: #ffffff; 
+    font-size: 1.5rem; 
+    margin-right: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    background: #adaee6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.button:hover {
+    background: #9fc6e6;
+}
+
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro h2 {
+        font-size: 1.25rem;
+    }
+
+    .intro p {
+        font-size: 0.9rem;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .box-container {
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
